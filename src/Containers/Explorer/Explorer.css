@@ -5,6 +5,10 @@
   height: calc(100% - 5rem);
   width: 80%;
   max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.6rem;
   padding-top: 6.4rem;
   background: var(--color-bg-dark);
