@@ -1,0 +1,12 @@
+.Explorer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: calc(100% - 5rem);
+  width: 80%;
+  max-width: 35rem;
+  padding: 1.6rem;
+  padding-top: 6.4rem;
+  background: var(--color-bg-dark);
+  z-index: 500;
+}
