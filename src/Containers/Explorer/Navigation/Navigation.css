@@ -48,4 +48,11 @@
 
 .NavItem--children .NavItem {
   justify-content: center;
+  transition: color .2s ease-out;
+  font-size: 1.4rem;
+  text-transform: none;
+}
+
+.NavItem--children .NavItem:hover {
+  color: var(--color-primary);
 }

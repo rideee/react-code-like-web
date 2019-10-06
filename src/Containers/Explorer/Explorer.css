@@ -4,7 +4,6 @@
   left: 0;
   height: calc(100% - 5.2rem);
   width: 80%;
-  max-width: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,4 +11,20 @@
   padding-top: 2rem;
   background: var(--color-bg-dark);
   z-index: 500;
+  transition: transform .2s ease-out;
+  transform: translateX(-100%);
+}
+
+
+@media (min-width: 768px) {
+  .Explorer {
+    max-width: 25rem;
+    transform: translateX(0) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .Explorer {
+    max-width: 35rem;
+  }
 }

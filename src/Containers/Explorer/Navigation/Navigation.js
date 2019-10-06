@@ -50,8 +50,8 @@ class Navigation extends Component {
         isOpen={this.state.isInfoOpen}
         click={this.toggleInfoHandler}
         >
+          <NavItem name="O projekcie" />
           <NavItem name="O mnie" />
-          <NavItem name="O witrynie" />
         </NavItem>
       </nav>
     );

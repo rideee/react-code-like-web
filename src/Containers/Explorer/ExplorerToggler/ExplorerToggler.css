@@ -1,0 +1,23 @@
+.ExplorerToggler {
+  position: fixed;
+  height: 5rem;
+  width: 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--color-bg-medium);
+  background: var(--color-bg-darker);
+  transition: .2s color ease-out;
+}
+
+.ExplorerToggler:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .ExplorerToggler {
+    display: none !important;
+  }
+}
