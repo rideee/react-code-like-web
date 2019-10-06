@@ -7,11 +7,16 @@
   align-items: center;
   border-bottom: 2px solid var(--color-bg-medium);
   background: var(--color-bg-darker);
-  transition: .2s color ease-out;
+  transition: color .2s ease-out;
+  color: var(--color-text-medium);
+}
+
+.ExplorerToggler i {
+  transition: transform .2s ease-out,
+              opacity .2s ease-out;
 }
 
 .ExplorerToggler:hover {
-  color: var(--color-primary);
   cursor: pointer;
 }
 

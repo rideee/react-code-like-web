@@ -22,7 +22,7 @@ class Explorer extends Component {
     return (
       <Fragment>
 
-        <ExplorerToggler click={this.visibilityToggleHandler} />
+        <ExplorerToggler isVisible={this.state.isVisible} click={this.visibilityToggleHandler} />
 
         <aside style={this.explorerStyle()} className="Explorer">
           <Navigation />
