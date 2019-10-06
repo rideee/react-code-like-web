@@ -10,9 +10,10 @@
   --color-success: #a5db90;
 
   --color-text-light: #bcc7d8;
+  --color-text-medium: #434953;
   --color-text-dark: #21252b;
 
-  --color-bg-light: #393e47;
+  --color-bg-light: #434953;
   --color-bg-medium: #282c34;
   --color-bg-dark: #21252b;
 }
@@ -40,5 +41,5 @@ body {
   font-size: 1.6rem;
   color: var(--color-text-light);
   background: var(--color-bg-medium);
-  font-family: 'Righteous', cursive;;
+  font-family: 'Maven Pro', sans-serif;
 }

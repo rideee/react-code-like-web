@@ -1,35 +1,27 @@
-import React from 'react';
-
-function iColor(depth) {
-  switch (depth) {
-    case 1:
-      return "var(--color-success)"
-    case 2:
-      return "var(--color-warning)"
-    case 3:
-      return "var(--color-danger)"
-    case 4:
-      return "var(--color-secondary)"
-    default:
-        return "var(--color-primary)"
-  }
-}
+import React, {Fragment} from 'react';
 
 const NavItem = (props) => {
-  const depthStyle = {
-    marginLeft: props.depth ? (parseInt(props.depth) * 2) + "rem" : 0,
-  };
 
-  const depthIconColor = {
-    color: iColor(parseInt(props.depth))
-  };
+  const chevronStyle = {
+    transform: props.isOpen ? "rotate(90deg)" : null
+  }
+
+  const childrenStyle = {
+    display: props.isOpen ? null : "none",
+    height: props.isOpen ? "auto" : 0
+  }
 
   return (
-    <div style={depthStyle} className="NavItem">
-      {props.icon ? <i style={depthIconColor} className={props.icon}></i> : null}
-      {props.children}
-    </div>
+    <Fragment>
+      <div className="NavItem" onClick={props.click}>
+        {props.icon ? <i className={"icon " + props.icon}></i> : null}
+        {props.name}
+        {props.children ? <i style={chevronStyle} className="chevron fas fa-chevron-right"></i> : null}
+      </div>
+      {props.children ? <div style={childrenStyle} className="NavItem--children">{props.children}</div> : null}
+    </Fragment>
   );
+
 }
 
 export default NavItem;

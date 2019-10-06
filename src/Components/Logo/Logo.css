@@ -12,6 +12,7 @@
   font-size: 2.5rem;
   color: var(--color-text-light);
   background: var(--color-bg-dark);
+  border-bottom: 2px solid var(--color-bg-medium);
 }
 
 .Logo span {
